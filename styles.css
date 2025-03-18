@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-        text-align: center;
+        align-items: center;
     background-color: #f8f9fa;
     color: #333;
 }
@@ -21,13 +21,11 @@ body {
 header {
     background-color: #212529;
     color: white;
-        text-align: center;
     padding: 20px 0;
 }
 
 header h1 {
     margin: 0;
-        text-align: center;
     font-size: 2rem;
 }
 
@@ -49,6 +47,33 @@ header h1 {
 
 .cta button:hover {
     background-color: #0056b3;
+}
+
+/* Ensure all sections and block elements are centered */
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center unordered lists */
+ul {
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+}
+
+/* Center form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure input and button are centered */
+input, button {
+    margin: 10px 0;
 }
 
 /* Features Section */
